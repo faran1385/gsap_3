@@ -75,7 +75,7 @@ function App() {
     }, {dependencies: [page]})
 
     return (
-        <main className={"sections-container"}>
+        <main className={"sections-container h-screen w-screen"}>
             <div className="home-sections">
                 {sectionData.map((section) => (
                     <Section
@@ -90,7 +90,7 @@ function App() {
                     />
                 ))}
             </div>
-            <div className={"lg:flex hidden fixed z-10 h-screen end-0 page-number px-8"}>
+            <div className={"lg:flex hidden fixed bottom-0 end-0 page-number px-8"}>
                 <span className={"text-white flex relative items-center me-8"}>
                     <span className={"w-3/4 absolute h-full end-full overflow-hidden"}>
                         <span className={"absolute page-1"}>1</span>

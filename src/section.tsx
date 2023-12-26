@@ -90,9 +90,8 @@ export const Section: React.FC<SectionProps> = (T) => {
     })
 
     const viewBtnMouseIn = contextSafe(() => {
-        gsap.to(".section-container__view-btn", {
-            transform: "rotate(0)"
-        })
+        let quickTo = gsap.quickTo(".section-container__view-btn", "rotation", {duration: .5})
+        quickTo(0)
     })
 
     const viewBtnMouseOut = contextSafe(() => {
@@ -118,7 +117,7 @@ export const Section: React.FC<SectionProps> = (T) => {
             </div>
 
             <div className={"h-full w-full flex justify-end items-center"}>
-                <button onMouseEnter={() => viewBtnMouseIn()} onMouseOut={() => viewBtnMouseOut()}
+                <button onMouseMove={() => viewBtnMouseIn()} onMouseLeave={() => viewBtnMouseOut()}
                         className={`${id !== 1 ? "translate-y-4 opacity-0" : ""} section-container__view-btn section-${id}-view-btn  text-white border-white border-solid border-2 rounded-full`}>VIEW
                 </button>
             </div>

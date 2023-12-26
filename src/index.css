@@ -13,7 +13,7 @@ body {
 }
 
 .section-container{
-    height: 100dvh;
+    height: 100vh;
 
 }
 
@@ -32,6 +32,8 @@ body {
     width: 18vw;
     transform: rotate(45deg);
 }
+
+
 .page-number{
     font-size: calc(.5rem + 2vw);
     padding-bottom: calc(.1em + .5rem);
@@ -46,3 +48,4 @@ body {
 .section-container__image{
     height: 100vh;
 }
+
