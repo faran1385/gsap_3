@@ -75,7 +75,7 @@ function App() {
     }, {dependencies: [page]})
 
     return (
-        <main className={"sections-container h-screen w-screen"}>
+        <main className={"sections-container h-full w-full"}>
             <div className="home-sections">
                 {sectionData.map((section) => (
                     <Section
